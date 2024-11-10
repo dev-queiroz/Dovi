@@ -1,0 +1,4 @@
+sounddevice===0.5.1
+vosk===0.3.45
+pyttsx3===2.98
+google.generativeai===0.8.3
