@@ -22,7 +22,7 @@ def listen_and_respond():
     print("Listening...")
     rec = vosk.KaldiRecognizer(model, 16000)
     while True:
-        data = stream.read(4096, exception_on_overflow=False)
+        data = stream.read(4000, exception_on_overflow=False)
         if len(data) == 0:
             break
         if rec.AcceptWaveform(data):
